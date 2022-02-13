@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="size">
     <div class="marquee-rtl">
       <div>
         {{quotes}}
@@ -23,50 +23,48 @@ export default {
 </script>
 
 <style>
-/* Solid border */
-hr.solid {
-  border-top: 3px solid #bbb;
-  margin : 50px
-}
-/* ---------------------------- */
-/* Défilement de droite à gauche */
-.marquee-rtl {
-  overflow: hidden; /* important */
-  width: 100%;
-  margin-top: 50px;
-}
-.marquee-rtl > div {
-  display: inline-block; /* important */
-  white-space: nowrap; /* important */
-  animation: defilement-rtl 200s infinite linear; /* défilement */
-  cursor: pointer;
-  padding: 10px 2em 10px 100%;
-}
-.marquee-rtl:hover > div {
-  animation-play-state: paused; /* met en pause le défilement */
-}
-@keyframes defilement-rtl {
-  0% {
-    -webkit-transform: translate(0);
-    transform: translate(0);
+  #size {
+    max-width: 98vw;
   }
-  100% {
-    -webkit-transform: translate(-100%);
-    transform: translate(-100%);
+  hr.solid {
+    border-top: 3px solid #bbb;
+    margin : 50px
   }
-}
-/* ---------------------------- */
-/* déco */
-h2,
-p {
-  text-align: center;
-}
+  .marquee-rtl {
+    overflow: hidden;
+    width: 100%;
+    margin-top: 50px;
+  }
+  .marquee-rtl > div {
+    display: inline-block;
+    white-space: nowrap;
+    animation: defilement-rtl 250s infinite linear;
+    cursor: pointer;
+    padding: 10px 2em 10px 100%;
+  }
+  .marquee-rtl:hover > div {
+    animation-play-state: paused;
+  }
+  @keyframes defilement-rtl {
+    0% {
+      -webkit-transform: translate(0);
+      transform: translate(0);
+    }
+    100% {
+      -webkit-transform: translate(-100%);
+      transform: translate(-100%);
+    }
+  }
+  h2,
+  p {
+    text-align: center;
+  }
 
-.marquee-rtl > div {
-  font-size: 3em;
-}
+  .marquee-rtl > div {
+    font-size: 3em;
+  }
 
-.title {
-  font-size: 5em;
-}
+  .title {
+    font-size: 5em;
+  }
 </style>

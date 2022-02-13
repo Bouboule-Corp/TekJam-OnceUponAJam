@@ -21,14 +21,14 @@
     .card {
         position: relative;
         overflow: hidden;
-        width: 30vw;
-        height: 100vh;
+        width: 28vw;
+        height: 90vh;
         border-radius: 20px;
     }
 
     #slide {
         position: absolute;
-        left: -90%;
+        left: -100%;
         transition: 1s;
     }
 
