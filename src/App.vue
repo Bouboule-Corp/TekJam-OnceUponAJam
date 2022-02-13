@@ -1,7 +1,6 @@
 <template>
   <div id="app">
     <Home/>
-    <img id="bg" src="./assets/arrow_bg.png">
     <div id="card1">
       <AnimatedCard>
         <img src="./assets/test.webp">
