@@ -76,6 +76,7 @@ export default {
     #txt {
         text-align: left;
         margin-left: 35%;
+        margin-right: 5%;
         overflow-wrap: break-word;
     }
 </style>
