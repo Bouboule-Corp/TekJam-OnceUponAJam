@@ -1,14 +1,14 @@
 <template>
   <div>
     <modal 
-    name="example"
+    name= "example"
     shiftX= '0.98'
     shiftY = '0.02'
-    width = "20%"
-    height = "10%"
+    width = "25%"
+    height = "15%"
     >
     <img :src="lien[this.num]"/>
-    <!--{{texte[this.num]}} -->
+    <p> {{texte[this.num]}} </p>
     </modal>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   data() {
     return {
       "texte": [
-          "A small step for monke a giant step for man",
+          "A small step for monke a giant step for men",
           "GORILLAAAAS",
           "Warning it's hot",
           "It's Britney bitch",
@@ -57,4 +57,10 @@ export default {
 }
 </script>
 
-
+<style>
+  img {
+    margin-top: 10px;
+    width: 30%;
+    height: 30%;
+  }
+</style>
