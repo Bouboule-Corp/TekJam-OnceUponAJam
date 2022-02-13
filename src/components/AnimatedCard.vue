@@ -1,8 +1,7 @@
 <template>
     <div class="card">
-        <div>
-            <!-- <img v-bind:src="'../assets/' + {img}" /> -->
-            <img :src="resolve_img_url(img)">
+        <div id="slide">
+            <slot></slot>
         </div>
     </div>
 </template>
@@ -13,22 +12,28 @@
         show: false,
     }),
     props: {
-        img: String
-    },
-    methods: {
-        resolve_img_url: function (path) {
-            let images = require.context('../assets', false, /\.png$|\.jpg$/)
-            return images("./"+path)
-        }
+        title: String
     }
   }
 </script>
 
 <style>
     .card {
-        background-color: black;
+        position: relative;
+        overflow: hidden;
+        width: 30vw;
+        height: 100vh;
         border-radius: 20px;
-        width: 40vw;
-        height: 35vh;
+    }
+
+    #slide {
+        position: absolute;
+        left: -90%;
+        transition: 1s;
+    }
+
+    .card:hover #slide {
+        transition: 1s;
+        left: 0;
     }
 </style>
