@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <div id="toast" @mouseover="play" @mouseleave="stop">
+        <div id="toast">
             <Achievement :num="number"/>
         </div>
         <div id="slide">
@@ -11,8 +11,6 @@
 
 <script>
     import Achievement from './Achievement.vue'
-    import { useSound } from '@vueuse/sound'
-    import sound from '../assets/advancement.mp3'
 
     export default {
         data: () => ({
@@ -24,15 +22,7 @@
         props: {
             title: String,
             number: Number
-        },
-        setup() {
-            const { play, stop } = useSound(sound)
-
-            return {
-            play,
-            stop,
-            }
-        },
+        }
     }
 </script>
 
