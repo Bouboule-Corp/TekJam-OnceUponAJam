@@ -30,8 +30,8 @@
     .card {
         position: relative;
         overflow: hidden;
-        width: 28vw;
-        height: 90vh;
+        width: 375px;
+        height: 648px;
         border-radius: 20px;
     }
     #slide {
