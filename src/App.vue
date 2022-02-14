@@ -59,12 +59,12 @@
         <img style="object-fit: contain" src="./assets/11.png">
       </AnimatedCard>
     </div>
-    <div id="card" style="top: 745vh; margin: 0vw 20vw;">
+    <div id="card" style="top: 725vh; margin: 0vw 20vw;">
       <AnimatedCard  number="11">
         <img style="object-fit: contain" src="./assets/12.png">
       </AnimatedCard>
     </div>
-    <div id="card" style="top: 805vh; margin: 0vw 25vw;">
+    <div id="card" style="top: 750vh; margin: 0vw 25vw;">
       <AnimatedCard  number="12">
         <img style="object-fit: contain" src="./assets/13.png">
       </AnimatedCard>
