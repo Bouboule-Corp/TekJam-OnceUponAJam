@@ -31,7 +31,7 @@
         position: relative;
         overflow: hidden;
         width: 375px;
-        height: 648px;
+        height: 580px;
         border-radius: 20px;
     }
     #slide {
